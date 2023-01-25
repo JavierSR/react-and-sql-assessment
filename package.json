@@ -1,0 +1,40 @@
+{
+  "name": "bravocare-assessment",
+  "version": "1.0.0",
+  "description": "Assessment for BravoCare fullstack developer. PERN Stack.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "build": "npm install && cd client && npm install && npm run build",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix ./client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/JavierSR/bravocare-assessment.git"
+  },
+  "keywords": [
+    "pern",
+    "postgres",
+    "node",
+    "express",
+    "react"
+  ],
+  "author": "Oscar Sandoval",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JavierSR/bravocare-assessment/issues"
+  },
+  "homepage": "https://github.com/JavierSR/bravocare-assessment#readme",
+  "dependencies": {
+    "concurrently": "^7.6.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "moment": "^2.29.4",
+    "nodemon": "^2.0.20",
+    "pg": "^8.8.0"
+  }
+}

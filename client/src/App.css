@@ -1,0 +1,100 @@
+.app {
+  text-align: center;
+}
+
+.app-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+.container {
+  background-color: aliceblue;
+  color: #282c34;
+  border-radius: 2px;
+}
+
+.shifts-comparison {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 856px;
+  width: 100%;
+  margin-bottom: 2rem;
+  padding: 1rem 0;
+}
+
+.shifts-comparison p {
+  font-size: 1.25rem;
+  text-align: left;
+  margin: 0 0 0 1rem;
+}
+
+.shifts-comparison p > span {
+  font-weight: bold;
+}
+
+.submmit {
+  margin-right: 1rem;
+  background-color: #282c34;
+  border: none;
+  color: white;
+  padding: 20px 48px;
+  font-size: 1rem;
+  transition: background-color 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.submmit:hover {
+  background-color: #3e434e;
+}
+
+.shifts-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+}
+
+.shift-item {
+  min-width: 200px;
+  cursor: pointer;
+  padding: 2rem;
+}
+
+.selected {
+  background-color: aqua;
+}
+
+.shift-item:hover:not(.selected) {
+  background-color: #fff;
+}
+
+.shift-item  > p {
+  font-size: 1.25rem;
+  margin: 0.5rem auto;
+}
+
+.shift-item  > p:first-child {
+  font-weight: bold;
+}
+
+.query-containers {
+  min-height: 30vh;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 786px) {
+  .shifts-container {
+    grid-template-columns: 100%;
+  }
+  .shifts-comparison {
+    flex-direction: column;
+  }
+}
